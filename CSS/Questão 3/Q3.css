@@ -1,0 +1,6 @@
+/* Resolução da Questão 3 */
+p {
+    text-align: justify;    /* Justifica o texto */
+    font-size: 16px;        /* Tamanho da fonte em 16 pixels */
+    line-height: 1.5;       /* Espaçamento entre linhas de 1.5 */
+}
