@@ -1,0 +1,25 @@
+/* Isso garante que a tabela ocupe espaço e mostre as bordas */
+#tabela-dados th{
+text-align: center;
+font-weight: bold;
+    width: 100%;
+    border-collapse: collapse; /* Une as bordas para não ficarem duplas */
+    font-family: Arial, sans-serif;
+}
+
+/* 7.1: Bordas externas e internas */
+#tabela-dados, #tabela-dados th, #tabela-dados td {
+    border: 2px solid black; /* Forçando uma borda preta visível */
+    padding: 10px;
+}
+
+/* 7.3: Destaque o cabeçalho com outra cor */
+#tabela-dados thead {
+    background-color: #4CAF50; /* Verde para destacar bem */
+    color: white;
+}
+
+/* 7.2: Alterne a cor das linhas (efeito zebra) */
+#tabela-dados tbody tr:nth-child(even) {
+    background-color: yellow !important; /* Cinza claro nas linhas pares */
+}
