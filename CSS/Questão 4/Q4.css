@@ -1,0 +1,8 @@
+.card {
+    background-color: white;       /* 1. Fundo branco */
+    border-radius: 10px;           /* 2. Borda arredondada */
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2); /* 3. Sombra leve */
+    padding: 20px;                 /* 4. Espaçamento interno de 20px */
+    margin-bottom: 15px;           /* 5. Margem inferior de 15px */
+    width: fit-content;            /* Faz a caixa ajustar ao tamanho do texto */
+}
