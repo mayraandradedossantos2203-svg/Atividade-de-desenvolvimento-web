@@ -1,0 +1,5 @@
+#menu {
+    list-style-type: none;    /* Remove os marcadores */               
+    display: flex;            /* Alinha os itens em linha */
+    gap: 15px;                /* Aplica o espaçamento de 15px entre os itens */
+}
