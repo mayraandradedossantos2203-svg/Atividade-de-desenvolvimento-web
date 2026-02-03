@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+       
+        #tabela-dados {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tabela-dados, #tabela-dados th, #tabela-dados td {
+            border: 2px solid black !important; /* Força a borda aparecer */
+            padding: 10px;
+        }
+        #tabela-dados thead {
+            background-color: #2c3e50;
+            color: white;
+        }
+        #tabela-dados tr:nth-child(even) {
+            background-color:  yellow !important;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabela-dados">
+        <thead>
+            <tr><th>Nome</th><th>Curso</th><th>Semestre</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Mayra</td><td> Licenciatura em Computação</td><td>6º</td></tr>
+            <tr><td>Laila</td><td>Biologia</td><td>5º</td></tr>
+            <tr><td>Ana paula</td><td>Agronomia</td><td>7º</td></tr>
+            <tr>
+          <td>Marcos Oliveira</td>
+          <td>Engenharia florestal</td>
+           <td>2º</td>
+</tr>
+        </tbody>
+    </table>
+</body>
+</html>
