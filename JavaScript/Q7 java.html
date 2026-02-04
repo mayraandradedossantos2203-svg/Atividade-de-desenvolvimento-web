@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fatorial</title>
+</head>
+<body>
+
+    <h2>valor Fatorial</h2>
+    <p id="resultado"></p>
+
+    <script>
+        let n = parseInt(prompt("Digite um número inteiro:"));
+
+        let resultado = document.getElementById("resultado");
+
+        if (isNaN(n) || n < 0) {
+            resultado.innerText = "Digite um número inteiro válido e não negativo.";
+        } else {
+            let fatorial = 1;
+
+            for (let i = 1; i <= n; i++) {
+                fatorial *= i;
+            }
+
+            resultado.innerText = "O fatorial de " + n + " é: " + fatorial;
+        }
+    </script>
+
+</body>
+</html>
