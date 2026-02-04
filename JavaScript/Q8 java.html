@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Par ou Ímpar</title>
+</head>
+<body>
+
+    <h2>Verificador de Par ou Ímpar</h2>
+    <p id="resultado"></p>
+
+    <script>
+        // Solicita um número inteiro
+        let n = parseInt(prompt("Digite um número inteiro:"));
+
+        // Seleciona o parágrafo para exibir o resultado
+        let resultado = document.getElementById("resultado");
+
+        // Verifica se é um número válido
+        if (isNaN(n)) {
+            resultado.innerText = "Digite um número inteiro válido.";
+        } else {
+            // Verifica se é par ou ímpar
+            if (n % 2 === 0) {
+                resultado.innerText = "O número " + n + " é par.";
+            } else {
+                resultado.innerText = "O número " + n + " é ímpar.";
+            }
+        }
+    </script>
+
+</body>
+</html>
