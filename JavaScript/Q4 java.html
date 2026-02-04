@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversão de Temperatura</title>
+</head>
+<body>
+
+<script>
+    // Solicita a temperatura
+    let temp = parseFloat(prompt("Digite a temperatura:"));
+
+    if (isNaN(temp)) {
+        alert("Valor inválido! Digite um número.");
+    } else {
+        
+        let opcao = prompt("Digite a conversão desejada:\n'C' para Celsius\n'F' para Fahrenheit").toUpperCase();
+
+        let resultado;
+
+        if (opcao === "C") {
+           
+            resultado = (temp - 32) * 5 / 9;
+            alert(temp + "°F equivalem a " + resultado.toFixed(2) + "°C");
+        } else if (opcao === "F") {
+           
+            resultado = (temp * 9 / 5) + 32;
+            alert(temp + "°C equivalem a " + resultado.toFixed(2) + "°F");
+        } else {
+            alert("Opção inválida! Digite 'C' ou 'F'.");
+        }
+    }
+</script>
+
+</body>
+</html>
