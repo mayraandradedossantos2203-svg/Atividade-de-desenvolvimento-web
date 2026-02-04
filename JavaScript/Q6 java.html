@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Números Primos</title>
+</head>
+<body>
+
+<script>
+    // Solicita o número N
+    let N = parseInt(prompt("Digite um número inteiro N:"));
+
+    if (isNaN(N) || N < 1) {
+        alert("Digite um número inteiro válido maior que 0.");
+    } else {
+        let primos = [];
+
+        // Verifica todos os números de 2 até N
+        for (let i = 2; i <= N; i++) {
+            let ehPrimo = true;
+
+            // Verifica se i é primo
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j === 0) {
+                    ehPrimo = false;
+                    break;
+                }
+            }
+
+            if (ehPrimo) {
+                primos.push(i);
+            }
+        }
+
+        let mensagem = "Números primos entre 1 e " + N + ": " + primos.join(", ");
+        alert(mensagem);
+        console.log(mensagem);
+    }
+</script>
+
+</body>
+</html>
