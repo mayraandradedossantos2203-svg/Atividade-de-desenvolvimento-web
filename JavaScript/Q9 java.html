@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Idades</title>
+</head>
+<body>
+
+<script>
+    let maiores = [];
+    let menores = [];
+
+    while (true) {
+        let nome = prompt("Digite o nome da pessoa (ou 'sair' para encerrar):");
+
+        if (nome === null || nome.toLowerCase() === "sair") {
+            break;
+        }
+
+        let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+
+        if (isNaN(idade) || idade < 0) {
+            alert("Idade inválida! Tente novamente.");
+            continue;
+        }
+
+        if (idade >= 18) {
+            maiores.push(nome + " (" + idade + " anos)");
+        } else {
+            menores.push(nome + " (" + idade + " anos)");
+        }
+    }
+
+    // Criar mensagem final
+    let mensagem = "Total de pessoas maiores de idade: " + maiores.length +
+                   "\n" + (maiores.length > 0 ? "Maiores de idade: " + maiores.join(", ") : "") +
+                   "\n\nTotal de pessoas menores de idade: " + menores.length +
+                   "\n" + (menores.length > 0 ? "Menores de idade: " + menores.join(", ") : "");
+
+    alert(mensagem);
+    console.log(mensagem);
+</script>
+
+</body>
+</html>
